@@ -1,1 +1,35 @@
 What is SmashBomb?
+
+Epicenter: Garbage in, Data out
+Text input, no submit button
+
+Min 6 characters
+Max?
+
+Live search after min characters? Or
+Once the use has started smashing listen for them to stop for 1 second and submit request.
+
+Time limit on smashing once started.
+Fuse on bomb started for 5 seconds.
+
+Validation:
+Not a word (requires a set of dictionaries)
+Limit repetition of characters
+
+Storage:
+UTF-8 Strings
+Couchdb? Mongodb?
+
+Results:
+Length of smash
+Time stamp of each keystroke
+Keyboard detection?
+Typing speed
+Related smashes by similar characters? Related content?
+
+Reports/stats:
+Reports on data collected.
+
+
+PANIC ROOM
+Anonymous user chat log of real-time smash bombs. 
