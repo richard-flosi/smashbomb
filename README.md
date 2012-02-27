@@ -1,6 +1,5 @@
 What is SmashBomb?
 ==================
-SmashBomb is...
 
 * Keyboard mashing as input.
 * Data collection.
@@ -11,6 +10,7 @@ SmashBomb is...
 
 Epicenter
 ---------
+
 * The Smash.
     * Keyboard mashing as input.
 
@@ -24,6 +24,7 @@ A report on what the users browser is telling us about them:
 
 Interface
 ---------
+
 * Text input, no submit button.
 * You have 5 seconds to complete your smash.
     * Fuse on bomb indicates time remaining.
@@ -31,6 +32,7 @@ Interface
 
 Validation
 ----------
+
 * Min 6 characters.
     * We are considering a max input, but it will not be an initial concern.
 * Not a word.
@@ -40,6 +42,7 @@ Validation
 
 Storage
 -------
+
 * UTF-8 Strings
 * UTC Timestamps
 * Couchdb? Mongodb?
@@ -90,11 +93,13 @@ SmashBomb activity and reports.
 
 SmashRSS
 ========
+
 * Subscribe to changes
 
 
 AnagramSearch
 =============
+
 * Excepts smashes as input.
 * Searches content of smashes for matches.
     * Allow for plugging-in other search engines too?
