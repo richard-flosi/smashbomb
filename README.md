@@ -1,6 +1,7 @@
 What is SmashBomb?
 ==================
 SmashBomb is...
+
 * Keyboard mashing as input.
 * Data collection.
 * Data reporting.
@@ -16,6 +17,7 @@ Epicenter
 Browser Report
 --------------
 A report on what the users browser is telling us about them:
+
 * IP Address
 * Headers: Language-Accept, etc.
 * Allows: Cookies, Javascript, etc.
@@ -56,6 +58,7 @@ Results
 -------
 Live search after min characters? Or
 Once the use has started smashing listen for them to stop for 1 second and submit request.
+
 * Length of smash
 * Timestamp of each keystroke
 * Keyboard detection?
