@@ -4,6 +4,8 @@ What is SmashBomb?
 * Keyboard mashing as input.
 * Data collection.
 * Data reporting.
+* Responsive.
+* Fast!
 * Fun!
 * OpenSource.
 * Extensible.
@@ -11,8 +13,28 @@ What is SmashBomb?
 Epicenter
 ---------
 
-* The Smash.
+* Chaos.
     * Keyboard mashing as input.
+* Anonymity.
+    * No authentication.
+* Transparency.
+    * Report we know about you.
+* Order.
+    * Report trends.
+
+Configuration
+-------------
+
+* encoding: UTF-8 Strings
+* timezone: UTC Timestamps
+
+Dependencies
+------------
+
+* [node](https://github.com/joyent/node)
+* [npm](https://github.com/isaacs/npm)
+* [express](https://github.com/visionmedia/express)
+* [bootstrap](https://github.com/twitter/bootstrap/)
 
 Browser Report
 --------------
@@ -43,8 +65,6 @@ Validation
 Storage
 -------
 
-* UTF-8 Strings
-* UTC Timestamps
 * Couchdb? Mongodb?
     * http://kkovacs.eu/cassandra-vs-mongodb-vs-couchdb-vs-redis
     * http://www.slideshare.net/gabriele.lana/couchdb-vs-mongodb-2982288

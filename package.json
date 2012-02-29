@@ -1,0 +1,25 @@
+{
+  "contributors": [{
+    "name": "Richard Flosi",
+    "email": "<richard.flosi@gmail.com>"
+    },{
+    "name": "Joe Barstow",
+    "email": "<joe.barstow@gmail.com>"
+  }],
+  "name": "smashbomb",
+  "description": "SmashBomb",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/richard-flosi/smashbomb.git"
+  },
+  "engines": {
+    "node": "~0.6.10"
+  },
+  "dependencies": {
+    "express": "2.5.8"
+  , "jade": ">= 0.0.1"
+  },
+  "devDependencies": {},
+  "optionalDependencies": {}
+}
