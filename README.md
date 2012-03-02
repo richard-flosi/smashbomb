@@ -28,13 +28,35 @@ Configuration
 * encoding: UTF-8 Strings
 * timezone: UTC Timestamps
 
+Installation
+------------
+
+1. Install [node.js](http://nodejs.org/)
+   * Go to [http://nodejs.org/](http://npmjs.org/), click the download link and follow instructions for your platform.
+1. Install [npm](http://npmjs.org/)
+   * curl http://npmjs.org/install.sh | sh
+1. git clone git://github.com/richard-flosi/smashbomb.git
+   cd smashbomb/
+   npm install -d
+   node app.js
+
 Dependencies
 ------------
 
 * [node](https://github.com/joyent/node)
+   Node.js is a platform built on Chrome's JavaScript runtime for easily building fast, 
+   scalable network applications. Node.js uses an event-driven, non-blocking I/O model that makes it 
+   lightweight and efficient, perfect for data-intensive real-time applications that run across 
+   distributed devices.
 * [npm](https://github.com/isaacs/npm)
+   npm is a package manager for node. You can use it to install and publish your node programs.
+   It manages dependencies and does other cool stuff.
 * [express](https://github.com/visionmedia/express)
+   High performance, high class web development for Node.js
+* [node-jqtpl](https://github.com/kof/node-jqtpl)
+   This is a port of jQuery's Template Engine to nodejs
 * [bootstrap](https://github.com/twitter/bootstrap/)
+   Simple and flexible HTML, CSS, and Javascript for popular user interface components and interactions.
 
 Browser Report
 --------------
