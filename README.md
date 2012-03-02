@@ -35,10 +35,7 @@ Installation
    * Go to [http://nodejs.org/](http://npmjs.org/), click the download link and follow instructions for your platform.
 1. Install [npm](http://npmjs.org/)
    * curl http://npmjs.org/install.sh | sh
-1. git clone git://github.com/richard-flosi/smashbomb.git
-   cd smashbomb/
-   npm install -d
-   node app.js
+1. git clone git://github.com/richard-flosi/smashbomb.git; cd smashbomb/; npm install -d
 
 Dependencies
 ------------
@@ -57,6 +54,11 @@ Dependencies
    This is a port of jQuery's Template Engine to nodejs
 * [bootstrap](https://github.com/twitter/bootstrap/)
    Simple and flexible HTML, CSS, and Javascript for popular user interface components and interactions.
+
+Run
+---
+
+   node app.js
 
 Browser Report
 --------------
