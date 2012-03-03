@@ -75,7 +75,6 @@ Run
 ---
 
    node app.js
->>>>>>> 3c6e500a295b0ea6cac45a655a79bfd5d53ef0b8
 
 Browser Report
 --------------
