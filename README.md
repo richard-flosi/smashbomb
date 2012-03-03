@@ -28,16 +28,54 @@ Configuration
 * encoding: UTF-8 Strings
 * timezone: UTC Timestamps
 
+Installation
+------------
+
+1. Install [node.js](http://nodejs.org/)
+   * Go to [http://nodejs.org/](http://npmjs.org/), click the download link and follow instructions for your platform.
+1. Install [npm](http://npmjs.org/)
+   * curl http://npmjs.org/install.sh | sh
+1. git clone git://github.com/richard-flosi/smashbomb.git; cd smashbomb/; npm install -d
+
 Dependencies
 ------------
 
 * [node](https://github.com/joyent/node)
+    Node.js is a platform built on Chrome's JavaScript runtime for easily building fast, 
+    scalable network applications. Node.js uses an event-driven, non-blocking I/O model that makes it 
+    lightweight and efficient, perfect for data-intensive real-time applications that run across 
+    distributed devices.
 * [npm](https://github.com/isaacs/npm)
+    npm is a package manager for node. You can use it to install and publish your node programs.
+    It manages dependencies and does other cool stuff.
 * [express](https://github.com/visionmedia/express)
+    High performance, high class web development for Node.js
+* [node-jqtpl](https://github.com/kof/node-jqtpl)
+    This is a port of jQuery's Template Engine to nodejs
 * [bootstrap](https://github.com/twitter/bootstrap/)
+    Simple and flexible HTML, CSS, and Javascript for popular user interface components and interactions.
 * [jquery](https://github.com/jquery/jquery)
+    jQuery is a fast and concise JavaScript Library that simplifies HTML
+    document traversing, event handling, animating, and Ajax interactions
+    for rapid web development.
+    jQuery is designed to change the way that you write JavaScript.
 * [underscore](https://github.com/documentcloud/underscore)
+    Underscore is a utility-belt library for JavaScript that provides
+    a lot of the functional programming support that you would expect in
+    Prototype.js (or Ruby), but without extending any of the built-in
+    JavaScript objects.
+    It's the tie to go along with jQuery's tux, and Backbone.js's suspenders.
 * [backbone](https://github.com/documentcloud/backbone/)
+    Backbone.js gives structure to web applications by providing models with
+    key-value binding and custom events, collections with a rich API of
+    enumerable functions, views with declarative event handling, and connects
+    it all to your existing API over a RESTful JSON interface.
+
+Run
+---
+
+   node app.js
+>>>>>>> 3c6e500a295b0ea6cac45a655a79bfd5d53ef0b8
 
 Browser Report
 --------------
