@@ -35,6 +35,9 @@ Dependencies
 * [npm](https://github.com/isaacs/npm)
 * [express](https://github.com/visionmedia/express)
 * [bootstrap](https://github.com/twitter/bootstrap/)
+* [jquery](https://github.com/jquery/jquery)
+* [underscore](https://github.com/documentcloud/underscore)
+* [backbone](https://github.com/documentcloud/backbone/)
 
 Browser Report
 --------------
@@ -48,19 +51,18 @@ Interface
 ---------
 
 * Text input, no submit button.
-* You have 5 seconds to complete your smash.
+* You have 1 seconds to complete your smash.
     * Fuse on bomb indicates time remaining.
-* If you stop typing for more than 1 second, your smash is considered complete.
+* If you stop typing for more than 200 milliseconds, your smash is considered complete.
 
 Validation
 ----------
 
+* No pasted text.
 * Min 6 characters.
-    * We are considering a max input, but it will not be an initial concern.
+* Limit of 2 consecutive repeats of a character.
 * Not a word.
     * Requires a dictionary for each supported language.
-* Limit of 2 consecutive repeats of a character.
-* No pasted text.
 
 Storage
 -------
