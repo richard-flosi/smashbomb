@@ -43,8 +43,8 @@
           <a class="brand" href="/">SmashBomb</a> 
           <div class="nav-collapse"> 
             <ul class="nav"> 
-              <li {{if title == 'SmashBomb' }}class="active"{{/if}}><a href="/">Home</a></li>
-              <li {{if title == 'About' }}class="active"{{/if}}><a href="/about">About</a></li>
+              <li {{if title == 'SmashBomb'}}class="active"{{/if}}><a href="/">Home</a></li>
+              <li {{if title == 'About'}}class="active"{{/if}}><a href="/about">About</a></li>
               <li><a rel="external" href="https://github.com/richard-flosi/smashbomb">GitHub</a></li> 
             </ul> 
           </div><!--/.nav-collapse --> 
@@ -64,8 +64,24 @@
     <script src="http://documentcloud.github.com/underscore/underscore-min.js"></script>
     <script src="http://documentcloud.github.com/backbone/backbone-min.js"></script>
     <script src="/js/bootstrap.js"></script>
-    <script src="/js/jQuery.dPassword.js"></script>
+    <script src="/js/util.js"></script>
+    <script src="/js/page.js"></script>
     <script src="/js/smashbomb.js"></script>
- 
+    {{if title == 'SmashBomb' }}
+      <script type="text/javascript">
+        $(document).ready(function() {
+          smashbomb.start({
+            burn_rate: 50,
+            fuse_selector: '#fuse',
+            // If you stop typing for more than 200 millisecond,
+            // your smash is considered complete.
+            keypress_time_diff: 200,
+            smash_selector: '#smash',
+            // You have 1 seconds to complete your smash.
+            smash_time: 5000
+          });
+        });
+      </script>
+    {{/if}}
   </body> 
 </html>

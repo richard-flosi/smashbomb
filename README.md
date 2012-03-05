@@ -25,7 +25,17 @@ Epicenter
 Configuration
 -------------
 
-* encoding: UTF-8 Strings
+* burn_rate: 50
+* fuse_selector: '#fuse'
+* keypress_time_diff: 200
+* keypresses_selector: '#keypresses'
+* smash_selector: '#smash'
+* smash_time: 1000
+
+Encoding
+--------
+
+* strings: UTF-8
 * timezone: UTC Timestamps
 
 Installation

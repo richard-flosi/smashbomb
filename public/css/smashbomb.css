@@ -1,12 +1,26 @@
 #smash {
   margin-top: 20px;
+  /* how do we center this element? */
+  /* text-align: center; */
   width: 100%;
+  max-width: 490px;
   font-size: 200%;
   height: 200%;
-  text-align: center;
   cursor: crosshair;
 }
 #fuse {
-  text-align: center;
-  font-size: 200%;
+  /* text-align: center; */
+  font-size: 125%;
+  font-family: monospace;
+  padding-bottom: 10px;
+}
+#log {
+  float: left;
+  font-family: monospace;
+}
+#current {
+  float: left;
+  padding-top: 50px;
+  padding-left: 50px;
+  font-size: 1000%;
 }
