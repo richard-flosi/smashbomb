@@ -39,12 +39,14 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
           </a> 
           <a class="brand" href="/">SmashBomb</a> 
           <div class="nav-collapse"> 
             <ul class="nav"> 
               <li {{if title == 'SmashBomb'}}class="active"{{/if}}><a href="/">Home</a></li>
               <li {{if title == 'About'}}class="active"{{/if}}><a href="/about">About</a></li>
+              <li {{if title == 'ToDo'}}class="active"{{/if}}><a href="/todo">ToDo</a></li>
               <li><a rel="external" href="https://github.com/richard-flosi/smashbomb">GitHub</a></li> 
             </ul> 
           </div><!--/.nav-collapse --> 
@@ -63,6 +65,8 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script src="http://documentcloud.github.com/underscore/underscore-min.js"></script>
     <script src="http://documentcloud.github.com/backbone/backbone-min.js"></script>
+    <script src="http://documentcloud.github.com/backbone/examples/backbone-localstorage.js"></script>
+    <script src="http://documentcloud.github.com/backbone/examples/todos/todos.js"></script>
     <script src="/js/bootstrap.js"></script>
     <script src="/js/util.js"></script>
     <script src="/js/page.js"></script>
