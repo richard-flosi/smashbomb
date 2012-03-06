@@ -18,12 +18,12 @@ var smashbomb = {
   _$fuse: null,
   _$smash: null,
   _first_keypressed: false,
-  _previous_keypress: null,
   _intervals: {
     fuse: null
   },
   _timeouts: {
-    countdown: null
+    countdown: null,
+    end: null
   },
   // private functions
   _block: function(self) {
@@ -123,22 +123,16 @@ var smashbomb = {
     // move anonymous function to a private function? is this part of validation?
     self._$smash.on('keypress', function(event) {
       self.keypress_log.set({events: self.keypress_log.events.push(event)});
+      if (self._timeouts.end) {
+        clearTimeout(self._timeouts.end);
+      }
+      self._timeouts.end = _.delay(self._end, self.keypress_time_diff, self);
       if (!self._first_keypressed) {
         self._first_keypressed = true;
-        self._timeouts.countdown = setTimeout(
-          _.delay(self._end, self.smash_time, self));
+        self._timeouts.countdown = _.delay(self._end, self.smash_time, self);
         self._intervals.fuse = setInterval(
           util.partial(self._burn, self), self.smash_time/self.burn_rate);
       }
-      if (self._previous_keypress) {
-        var time_diff = event.timeStamp - self._previous_keypress.timeStamp;
-        // rework this to use setTimeout/clearTimeout
-        // this way if they stop typing for more than 200 milliseconds we can call _end()
-        if (time_diff > self.keypress_time_diff) {
-          self._end(self);
-        }
-      }
-      self._previous_keypress = event;
     });
 
     // set focus
