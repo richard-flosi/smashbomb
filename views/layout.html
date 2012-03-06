@@ -66,12 +66,14 @@
     <script src="http://documentcloud.github.com/underscore/underscore-min.js"></script>
     <script src="http://documentcloud.github.com/backbone/backbone-min.js"></script>
     <script src="http://documentcloud.github.com/backbone/examples/backbone-localstorage.js"></script>
-    <script src="http://documentcloud.github.com/backbone/examples/todos/todos.js"></script>
     <script src="/js/bootstrap.js"></script>
     <script src="/js/util.js"></script>
     <script src="/js/page.js"></script>
-    <script src="/js/smashbomb.js"></script>
+    {{if title == 'ToDo' }}
+      <script src="http://documentcloud.github.com/backbone/examples/todos/todos.js"></script>
+    {{/if}}
     {{if title == 'SmashBomb' }}
+      <script src="/js/smashbomb.js"></script>
       <script type="text/javascript">
         $(document).ready(function() {
           smashbomb.start({
@@ -86,6 +88,9 @@
           });
         });
       </script>
+    {{/if}}
+    {{if title == 'SmashBomb Backbone.js' }}
+      <script src="/js/smashbomb_backbone.js"></script>
     {{/if}}
   </body> 
 </html>
