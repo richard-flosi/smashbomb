@@ -92,5 +92,17 @@
     {{if title == 'SmashBomb Backbone.js' }}
       <script src="/js/smashbomb_backbone.js"></script>
     {{/if}}
+    {{if title == 'jquery.smash.js' }}
+      <script src="/js/jquery.smash.js"></script>
+      <script type="text/javascript">
+        $(document).ready(function() {
+          var smashed = function(e) {
+            var $smash = $(this);
+            $smash.blur().attr('disabled', 'disabled');
+          };
+          $('#smash').on('smash', {keypress_time_diff: 200, smash_time: 1000}, smashed).focus();
+        });
+      </script>
+    {{/if}}
   </body> 
 </html>

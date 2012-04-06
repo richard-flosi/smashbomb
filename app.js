@@ -30,6 +30,7 @@ app.configure('production', function(){
 // Routes
 app.get('/', routes.index);
 app.get('/sbb', routes.smashbomb_backbone);
+app.get('/jsmash', routes.jquery_smash);
 app.get('/about', routes.about);
 app.get('/todo', routes.todo);
 
